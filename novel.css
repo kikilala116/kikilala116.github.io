@@ -1,0 +1,54 @@
+.talk-wrap{
+ display: block;
+ clear: both;
+ margin:0 auto 3px auto;
+ }
+.talk-wrap p{
+ margin:0;
+ }
+ .left-icon{
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ -webkit-border-radius: 50%;
+ background: no-repeat;
+ background-size: 180%;
+ background-position: center;
+ float:left;
+ display:inline-block;
+ box-shadow: 1px 1px 5px #aaa; /*左のアイコンの影の設定*/
+ border: 3px solid #fff; /*左のアイコンの枠の設定*/
+ margin-bottom: 10px;
+ }
+ .talk-left{
+ float:right;
+ position: relative;
+ background: #fff; /*左の会話の背景色*/
+ border: 2px solid #666;
+ padding: 3%;
+ border-radius: 10px;
+ width: 70%;
+ margin-top:10px;
+ box-shadow: 1px 1px 5px #aaa; /*左の会話の影の設定*/
+ margin-bottom: 10px;
+ }
+.talk-left:before {
+ content: "";
+ display: inline-block;
+ border: 10px solid transparent;
+ border-right-color: #666;
+ position: absolute;
+ left: -20px;
+ top: 25%;
+ margin-top: -9px;
+}
+.talk-left:after {
+ content: "";
+ display: inline-block;
+ border: 9px solid transparent;
+ border-right-color: #fff;
+ position: absolute;
+ left: -16px;
+ top: 25%;
+ margin-top: -8px;
+}
