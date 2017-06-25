@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+#wrap {
+    width: 427px;
+    height: 240px;
+    position: relative;
+    background-color:skyblue;
+	background-image:url("https://2.bp.blogspot.com/-EowGFarqqDc/WU_KyG2iZII/AAAAAAAAAV8/92mmx1xaJHwbuxedVFOwbXSkm8YfZmrMgCLcBGAs/s1600/1.png");
+	background-size:contain;
+}
+
+
+.essay {
+	width: 300px;
+    height: 66px;
+    border: solid 1px pink;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    padding: 3px 3px;
+	padding-left: 10px;
+	
+	left: 70px;
+	background-color:rgba(255,153,0,0.8);
+	line-height:18px;
+	font-size: 12px;
+    color: white;
+    opacity: 0;
+    z-index: 0;
+}
+
+.essay p {
+	transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-ms-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+}
+
+.none {
+	opacity: 0;
+    z-index: 0;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+input[type=radio]:checked + .essay{
+	opacity: 1;
+    z-index: 1;
+}
+
+input[type=radio]:checked + .essay p {
+	opacity: 1;
+    z-index: 1;
+}
+
+
+#s1:checked ~ #l2 {
+    z-index: 1;
+}
+
+
+#s2:checked ~ #l3 {
+    z-index: 1;
+}
+
+#s3:checked ~ #l4 {
+    z-index: 1;
+}
+
+#s4:checked ~ #l1 {
+    z-index: 1;
+}
+
+.btn {
+	display: block;
+    width: 427px;
+    height: 240px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
